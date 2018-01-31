@@ -11,7 +11,8 @@ join student s on s.id = sc.studentid
 where c.description = 'Math 102' 
 
 -- Assignment 3 - display all classes for student with a major of Math
-select CONCAT(s.FirstName, ' ', s.LastName) as 'Name', c.description as 'Class' from student s
+select CONCAT(s.FirstName, ' ', s.LastName) as 'Name', c.description as 'Class' 
+from student s
 join major m on m.id = s.majorid
 join schedule sc on sc.studentid = s.id
 join class c on c.id = sc.classid
