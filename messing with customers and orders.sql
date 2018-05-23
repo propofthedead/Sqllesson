@@ -25,6 +25,10 @@ select * from Customer
 	select * from [Order]
 	*/
 
-	delete from [order]
-	where id=13
+	--delete from [order]
+	--where id=13
+	--select * from [Order]
+	update [order] set
+		Date='2018-23-5'
+	where [Order].id=16
 	select * from [Order]
